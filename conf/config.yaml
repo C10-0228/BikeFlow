@@ -1,0 +1,16 @@
+project:
+  name: BikeFlow
+  timezone: America/New_York
+  random_seed: 42
+data:
+  raw_trip: data/raw/trips.csv
+  raw_weather: data/raw/weather.csv
+  clean_trip: data/processed/ride_fact.csv
+  hourly: data/processed/station_hourly.csv
+  station_features: data/processed/station_features.csv
+artifacts:
+  quality: artifacts/data_quality.json
+  metrics: artifacts/metrics.json
+  forecasts: artifacts/forecasts.csv
+  clusters: artifacts/clusters.csv
+
