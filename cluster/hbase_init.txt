@@ -1,0 +1,12 @@
+create 'bike_station_profile', 'base', 'stat', 'model'
+create 'bike_station_forecast', 'p'
+
+put 'bike_station_profile', 'S001', 'base:name', 'Central Park'
+put 'bike_station_profile', 'S001', 'base:lat', '40.767'
+put 'bike_station_profile', 'S001', 'base:lng', '-73.971'
+put 'bike_station_profile', 'S001', 'stat:cluster_id', '0'
+put 'bike_station_profile', 'S001', 'model:model_version', 'spark-mllib-v1'
+put 'bike_station_forecast', 'S001#2024033118', 'p:predicted_pickup', '12.5'
+put 'bike_station_forecast', 'S001#2024033118', 'p:lower_bound', '8.4'
+put 'bike_station_forecast', 'S001#2024033118', 'p:upper_bound', '16.6'
+
